@@ -1,0 +1,164 @@
+*{
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-left: 14px;
+    padding-right: 14px;
+    display: block;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+  }
+.contact-us
+{
+    width: 100%;
+    margin:-120px auto 0;
+    
+}
+.contact-us h1{
+    color: white;
+    margin-bottom: 12px;
+    text-align: center;
+    
+}
+.contact-us p{
+    color:white;
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 1.3em;
+    text-align: center;
+}
+.immagine
+{
+  background-image: url(../img/bg_header.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 40vh;
+}
+.immagine h1{
+    color:white;
+}
+.dx{
+    width: 48%;
+    float: right;
+    
+}
+.sx{
+    width: 48%;
+    float: left;
+    
+}
+.clearfix:before, .clearfix:after
+{
+    content: "";
+    display: table;
+}
+.clearfix:after{
+    width:100%;
+    visibility: hidden;
+    clear: both;
+}
+label
+{
+    font-size:0.8em;
+    margin-top:20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color:black;
+}
+.line{
+    width: 100%;
+    visibility: hidden;
+    background-color:#555;
+    padding-top:59px;
+    padding-bottom: 0px;
+}
+h1, h2
+{
+    color: black;
+}
+.bottone
+{
+    width: 100%;
+    border:0px;
+    padding:15px 30px;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    margin-top:20px;
+}
+.finepag{
+    padding: 40px 0;
+}
+/* Form */
+.termini {
+font-size:13px;
+text-align:left;
+margin-top: 3px;
+}
+.inserimento
+{
+    border-radius: 4px;
+    border: 1px solid #555;
+    padding-left: 10px;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    min-height: 2.87143rem;
+    color:#555;
+}
+.areatesto
+{
+    border-radius: 4px;
+    border: 1px solid #555;
+    padding-left: 10px;
+    padding-top:10px;
+    margin-top: 5px;
+    margin-bottom:10px;
+    width: 100%;
+    min-height: 150px;
+}
+
+@media screen and (max-width:768px)
+{
+    .dx, .sx{
+        float: none;
+        width: 100%;
+    }
+    .line{
+        padding-top:36px;
+    }
+    .contact-us h1{
+        font-size: 2em;
+    }
+    .contact-us {
+        width: 100%;
+        margin: -100px auto 0;
+    }
+    .contact-us p{
+        font-size: 1em;
+    }
+}
+
+/*
+
+css-tricks.com
+Guardare questo sito
+
+
+
+Personalizzazione delle checkbox */
+
+/*input[type="checkbox"],
+input[type="radio"]
+{
+    opacity: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top:0;
+    left: 0;
+}*/

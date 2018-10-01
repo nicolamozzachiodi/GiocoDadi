@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+  }
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(../img/1.jpg);
+    background-size: cover;
+    background-repeat:no-repeat; 
+    overflow-x: hidden;
+}
+.main-wrapper{
+    margin: 0 auto;
+}
+.flex-container{
+    display: flex;
+}
+.fs{
+    width: 100vw;
+    height: 100vh;
+}
+.spinner{
+    margin:0 auto;
+    position: absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-wrap: wrap;
+    width: 75px;
+    
+    
+    
+    opacity:1;
+}
+.text{
+    width: 100%;
+    text-align:center;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #121f28;
+    transform: translateX(-50%);
+    font-family: montserrat, sans-serif;
+    
+}
+p{
+    color: white;
+    font-size: 2em!important;
+    font-weight: 900!important;
+    margin-bottom:10px;
+}
+.spinner div{
+    background: white;
+    opacity:0.3;
+    width: 25px;
+    height: 25px;
+    animation: 1.4s anim infinite;
+   /* animation-direction: alternate-reverse;*/
+}
+
+.spinner div:nth-child(7){
+    animation-delay: .30s;
+}
+.spinner div:nth-child(4){
+    animation-delay: .60s;
+}
+.spinner div:nth-child(8){
+    animation-delay: .60s;
+}
+.spinner div:nth-child(1){
+    animation-delay: .90s;
+}
+.spinner div:nth-child(5){
+    animation-delay: 1s;
+}
+.spinner div:nth-child(9){
+    animation-delay: .90s;
+}
+.spinner div:nth-child(2){
+    animation-delay: 1.20s;
+}
+.spinner div:nth-child(6){
+    animation-delay: 1.20s;
+}
+.spinner div:nth-child(3){
+    animation-delay: 1.5s;
+}
+@keyframes anim {
+    0% {
+        opacity:0;
+        transform: scale(1);
+    }
+    30%{
+        transform: scale(0.9);
+        background: rgb(163, 163, 163);
+    }
+    100% {
+        transform: scale(1);
+       opacity:1;
+    }
+}
+
+
+
+
+var plaA = document.getElementById("g1");
+        plaA.addEventListener("click",function() {
+            var tiro = 0;
+        if (tiroA <= tiroB) {
+            tiroA++;
+            valoreA = Math.round(Math.random() * (6 - 1) + 1);
+            checkStatus();
+        }
+        });
+
+        var plaB = document.getElementById("g2");
+        plaB.addEventListener("click",function() {
+            var tiro = 0;
+        if (tiroB <= tiroA) {
+            tiroB++;
+            valoreB = Math.round(Math.random() * (6 - 1) + 1);
+            checkStatus();
+        }
+        });
+        
+
+
+        function AnimazioneDadoA() {
+            var dado = document.querySelector("#dadoA button"); 
+            dado.addEventListener("click", function() {
+                
+                this.parentElement.classList.add("muovi");
+                setTimeout(2000);
+            }, false);
+        };
+
+        function AnimazioneDadoB() {
+            var dado = document.querySelector("#dadoB button"); 
+            dado.addEventListener("click", function() {
+               
+                this.parentElement.classList.add("muovi");
+            
+            }, false);
+        };
+        AnimazioneDadoB();
